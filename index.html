@@ -1,176 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrototypeArch Linux</title>
-
+    <title>Prototype | Cyber Lab</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0d0d0d; 
+            color: #ff0000; 
+            font-family: 'Courier New', Courier, monospace; 
+            line-height: 1.6;
         }
-
-        body{
-            background:#0d0d0d;
-            color:red;
+        header { 
+            background: #1a1a1a; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 2px solid #ff0000; 
         }
-
-        header{
-            background:#111;
-            padding:20px 60px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            border-bottom:2px solid red;
+        .container { padding: 40px; max-width: 800px; margin: auto; }
+        .project-card { 
+            border: 1px solid #ff0000; 
+            padding: 20px; 
+            margin-top: 20px; 
+            background: #111; 
         }
-
-        header h1{
-            color:red;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin-left:25px;
-            transition:.3s;
-        }
-
-        nav a:hover{
-            color:red;
-        }
-
-        .hero{
-            height:90vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600") center/cover;
-        }
-
-        .hero h2{
-            font-size:60px;
-            color:red;
-        }
-
-        .hero p{
-            margin-top:20px;
-            font-size:22px;
-            max-width:700px;
-        }
-
-        .btn{
-            margin-top:35px;
-            padding:15px 35px;
-            background:red;
-            color:white;
-            text-decoration:none;
-            border-radius:8px;
-            transition:.3s;
-        }
-
-        .btn:hover{
-            background:#b30000;
-        }
-
-        .features{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-            padding:80px;
-        }
-
-        .card{
-            background:#181818;
-            padding:30px;
-            border-radius:12px;
-            border:1px solid #333;
-            transition:.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-8px);
-            border-color:red;
-        }
-
-        .card h3{
-            color:red;
-            margin-bottom:15px;
-        }
-
-        footer{
-            text-align:center;
-            padding:25px;
-            border-top:1px solid #333;
-            margin-top:50px;
-        }
+        h1, h2 { color: #ff3333; }
+        a { color: #ff9999; text-decoration: none; }
     </style>
-
 </head>
 <body>
 
-<header>
+    <header>
+        <h1>PROTOTYPE_LAB</h1>
+        <p>Cybersecurity & Linux Enthusiast</p>
+    </header>
 
-<h1>PrototypeArch</h1>
+    <div class="container">
+        <h2>عن الموقع</h2>
+        <p>مرحباً بك في مختبري الرقمي. هنا أشارك مشاريعي، أدواتي، وتجاربي في عالم الأمن السيبراني.</p>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Downloads</a>
-<a href="#">Tools</a>
-<a href="#">Packages</a>
-<a href="#">Documentation</a>
-<a href="#">Community</a>
-<a href="#">GitHub</a>
-</nav>
+        <div class="project-card">
+            <h3>My Projects</h3>
+            <p>قريباً ستجد هنا جميع السكربتات والأدوات الخاصة بي.</p>
+        </div>
+    </div>
 
-</header>
-
-<section class="hero">
-
-<h2>PrototypeArch Linux</h2>
-
-<p>
-A modern Arch Linux distribution designed for cybersecurity,
-penetration testing and developers.
-</p>
-
-<a href="#" class="btn">Download Now</a>
-
-</section>
-
-<section class="features">
-
-<div class="card">
-<h3>⚡ Fast</h3>
-<p>Lightweight Arch Linux base with maximum performance.</p>
-</div>
-
-<div class="card">
-<h3>🛡 Security</h3>
-<p>Built for cybersecurity professionals and students.</p>
-</div>
-
-<div class="card">
-<h3>📦 Packages</h3>
-<p>Thousands of packages available from Arch repositories.</p>
-</div>
-
-<div class="card">
-<h3>🚀 Open Source</h3>
-<p>Powered by the Arch Linux community.</p>
-</div>
-
-</section>
-
-<footer>
-
-© 2026 PrototypeArch Linux
-
-</footer>
-
+    <!-- ربط ملف الجافاسكريبت -->
+    <script src="script.js"></script>
 </body>
 </html>
